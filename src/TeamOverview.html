@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<style>
+	#links {
+		background-color: AliceBlue;
+	}
+	/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: .1%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 0.2%;
+  left: 0.2%;
+  color: white;
+  font-size: 100%;
+}
+
+#slogan {
+	color: gray;
+}
+#pits {
+	text-decoration: none;
+	font-size: 130%;
+}
+	</style>
+
+<script>
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attd ibute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+    <title>Business Plan</title>
+		<link rel="stylesheet" type="text/css" href="whatever.css">
+
+  </head>
+
+  <body>
+
+		<!--Navigation Bar-->
+		<div class="w3-bar w3-black">
+			<table id="links" class="w3-bar w3-black">
+				<td >
+					<td><a id="pits" class="w3-bar-item" href="BusinessPlanApp.html">Home</a></td>
+					<td><a id="pits"class="w3-bar-item " href="#">Team Overview</a></td>
+					<td><a id="pits"class="w3-bar-item " href="Finance.html">Finance</a></td>
+					<td><a id="pits"class="w3-bar-item " href="CommunityOutreach.html">Community Outreach</a></td>
+					<td><a id="pits"class="w3-bar-item " href="Alumni.html">Alumni</a></td>
+					<td><a id="pits"class="w3-bar-item " href="CorporateEvents.html">Corporate Events</a></td>
+					<td><a id="pits"class="w3-bar-item " href="CaresAndShares.html">Cares and Shares</a></td>
+					<td><a id="pits"class="w3-bar-item " href="History.html">History</a></td>
+					<td><a id="pits"class="w3-bar-item " href="KPI.html">KPIs</a></td>
+					<td><a id="pits"class="w3-bar-item " href="SWOT.html">SWOT</a></td>
+					<td><a id="pits"class="w3-bar-item " href="Sponsors.html">Sponsors</a></td>
+					<td><a id="pits"class="w3-bar-item " href="Video.html">Videos</a></td>
+
+				</td >
+			</table>
+		</div>
+
+		<!--logo-->
+		<img src="toprightlogo.jpg" style="width:5%; float:right; margin-right:1em; margin-top: 1em;" title="TEAM 2590!">
+		<!--Title-->
+		<h1 style="margin-left:6%; margin-top: 1%;"> <center> Team Overview </center> </h1>
+
+		<!--Image-->
+		<img src="FullTeam2020.jpg" style="width:70%; margin-top: 2%; float:middle;" >
+		<p style="color: white; font-size: 8px;">space filler</p>
+		<!--team business slogan -->
+		<h1 id="slogan"><center><i>"We run our team like a high-tech business"</i></center></h1>
+
+		<!-- grid of images -->
+		<table class="row" style="width:100%; float:right; margin-bottom: 3%; margin-top:1%;">
+		  <td class="column" style="width:23%;">
+		    <img src="Genders.png" alt="Race" style="width:100%;" align="center" onclick="myFunction(this);">
+		  </td>
+		  <td class="column" style="width:23%;">
+		    <img src="Subteams (1).png" alt="Subteams" style="width:100%;" align="center" onclick="myFunction(this);">
+		  </td>
+		  <td class="column" style="width:23%;">
+		    <img src="Races.png" alt="Genders" style="width:100%;" align="center" onclick="myFunction(this);">
+		  </td>
+		  <td class="column" style="width:23%;">
+		    <img src="Class Distribution.png" alt="Classes" style="width:100%;" align="center" onclick="myFunction(this);">
+		  </td>
+		</table>
+
+
+		  <!-- Expanded image -->
+		  <img id="expandedImg" style="width:40%; margin-bottom: 5%;">
+
+		  <!-- Image text -->
+		  <div id="imgtext"></div>
+
+  </body>
+</html>
