@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Business Plan</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="whatever.css">
+
+  <style>
+    table {
+      background-color: AliceBlue;
+    }
+    .mySlides {
+      display:none;
+    }
+    div.auto-slides {
+      margin-left: 2%;
+      float: left;
+      margin-bottom: 0.3%;
+    }
+    div.auto-slides {
+      border-style: groove;
+    }
+    li {
+      font-size: 130%;
+      color: black;
+    }
+    li.heading{
+      font-size: 130%;
+      color:black;
+    }
+    #pits {
+      text-decoration: none;
+      font-size: 130%;
+    }
+    #border-top {
+      position: absolute;
+      margin-top:0.65%;
+      left:62.5%;
+    }
+    #border-bottom {
+      position: absolute;
+      margin-top: 45.2%;
+      left: 62.5%;
+    }
+    h2 {
+      color: red;
+    }
+  </style>
+  </head>
+
+  <body>
+
+	<!--Navigation Bar-->
+  	<div width = "100" class="w3-bar w3-black">
+    		<table id = "table1" class="w3-bar w3-black">
+    			<tr>
+            <td><a id="pits" class="w3-bar-item" href="BusinessPlanApp.html">Home</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="TeamOverview.html">Team Overview</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="Finance.html">Finance</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="CommunityOutreach.html">Community Outreach</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="Alumni.html">Alumni</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="CorporateEvents.html">Corporate Events</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="CaresAndShares.html">Cares and Shares</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="History.html">History</a></td>
+            <td><a id="pits"class="w3-bar-item " href="KPI.html">KPIs</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="SWOT.html">SWOT</a></td>
+  					<td><a id="pits"class="w3-bar-item " href="Sponsors.html">Sponsors</a></td>
+            <td><a id="pits"class="w3-bar-item " href="Video.html">Videos</a></td>
+
+    			</tr>
+    		</table>
+    	</div>
+
+      <!--logo-->
+      <img src="toprightlogo.jpg" style="width:5%; float:right; margin-right:1em; margin-top:1em;" title="TEAM 2590!">
+      <h1 style="margin-left:6%; margin-top: 1.5%;"> <center> FTC - First Tech Challenge </center> </h1>
+
+  <!--div for images-->
+  <div class="auto-slides" style="max-width:60%; margin-top: 0.7% "w3-animate-right"">
+    <img class="mySlides" src="FTC1.jpg" style="width:100%">
+    <img class="mySlides" src="FTC2.jpg" style="width:100%">
+    <img class="mySlides" src="FTC3.jpg" style="width:100%">
+    <img class="mySlides" src="FTCNao.jpg" style="width:100%">
+  </div>
+
+<!-- top and bottom borders using absolute positioning -->
+  <img id="border-top" src="redborder.jpg" style="width:40%; height: 15px;"/>
+  <img id="border-bottom" src="redborderbottom.jpg" style="width:40%; height: 15px;"/>
+
+  <div style="margin-top: 2.7%;">
+    <h2 style="float: left; margin-left: 4%;"> Rover Ruckus 2018-2019 </h2>
+    <ul style="float:left;">
+      <li id="heading" style="list-style-type: none; margin-left: 8%;"><b> Frozen Frenzy Qualifier</b></li>
+      <li style="margin-left: 25%;">Think Award Winner</li>
+      <li style="margin-left: 25%;"> Inspire Award Top 3 </li>
+      <li style="margin-left: 25%;">Control Award Top 3 </li>
+      <li style="margin-left: 25%;">Rockwell Collins Innovate Award Top 3</li>
+      <li style="margin-left: 25%;">First Seed Alliance Captain</li>
+      <li style="margin-left: 25%;">Event Semi-Finalist</li>
+      <!-- second competition awards -->
+      <li id="heading" style="list-style-type: none; margin-left: 8%;"><b> Southern Scuffle Qualifier</b></li>
+      <li style="margin-left: 25%;">Think Award Top 3</li>
+      <!-- third competition awards -->
+      <li id="heading" style="list-style-type: none; margin-left: 8%;"><b> Eastern Pennsylvania Qualifier</b></li>
+      <li style="margin-left: 25%;">Think Awards Top 3</li>
+      <li style="margin-left: 25%;">Control Award Top 3</li>
+    </ul>
+    <!-- 2017-18 competition challenge -->
+    <h2 style="float: left; margin-left: 4%;"> Relic Recovery 2017-2018 </h2>
+    <ul style="float:left;">
+      <li id="heading" style="list-style-type: none; margin-left: 8%;"><b> Lehigh Valley Qualifying Tournament </b></li>
+      <li style="margin-left: 25%;">Think Award Top 3</li>
+    </ul>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+
+      }
+  </script>
+
+  </body>
+</html>
