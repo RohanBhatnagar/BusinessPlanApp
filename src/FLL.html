@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FLL</title>
+
+  <style>
+
+  table {
+    background-color: AliceBlue;
+	}
+  p {
+    font-size: 115%;
+  }
+  ul {
+    font-size: 115%;
+  }
+  #pits {
+    text-decoration: none;
+    font-size: 130%;
+  }
+  #border-top {
+    position: absolute;
+    margin-top:1.5%;
+    left:62.2%;
+  }
+  #border-bottom {
+    position: absolute;
+    margin-top: 40.7%;
+    left: 62.2%;
+  }
+  p {
+    color: red;
+  }
+  li {
+    color: black;
+  }
+  .mySlides {
+    margin-bottom: 1%;
+  }
+  </style>
+
+	<title>Business Plan</title>
+	<link rel="stylesheet" type="text/css" href="whatever.css">
+
+	<!--Navigation Bar-->
+	<div width = "100" class="w3-bar w3-black">
+		<table class="w3-bar w3-black">
+			<tr>
+        <td><a id="pits" class="w3-bar-item" href="BusinessPlanApp.html">Home</a></td>
+        <td><a id="pits"class="w3-bar-item " href="TeamOverview.html">Team Overview</a></td>
+        <td><a id="pits"class="w3-bar-item " href="Finance.html">Finance</a></td>
+        <td><a id="pits"class="w3-bar-item " href="CommunityOutreach.html">Community Outreach</a></td>
+        <td><a id="pits"class="w3-bar-item " href="Alumni.html">Alumni</a></td>
+        <td><a id="pits"class="w3-bar-item " href="CorporateEvents.html">Corporate Events</a></td>
+        <td><a id="pits"class="w3-bar-item " href="CaresAndShares.html">Cares and Shares</a></td>
+        <td><a id="pits"class="w3-bar-item " href="History.html">History</a></td>
+        <td><a id="pits"class="w3-bar-item " href="KPI.html">KPIs</a></td>
+        <td><a id="pits"class="w3-bar-item " href="SWOT.html">SWOT</a></td>
+        <td><a id="pits"class="w3-bar-item " href="Sponsors.html">Sponsors</a></td>
+        <td><a id="pits"class="w3-bar-item " href="Video.html">Videos</a></td>
+
+			</tr>
+		</table>
+	</div>
+
+	</head>
+
+	<body>
+    <!--logo-->
+    <img src="toprightlogo.jpg" style="width:5%; float:right; margin-right:1em; margin-top:1em;" title="TEAM 2590!">
+  <header style="color:red; margin-left: 6%; margin-top: 1.5%;" align="center"> <h1>FLL - First Lego League</h1> </header>
+
+  <!-- top and bottom borders using absolute positioning -->
+    <img id="border-top" src="redborder.jpg" style="width:40%; height: 15px;"/>
+    <img id="border-bottom" src="redborderbottom.jpg" style="width:40%; height: 15px;"/>
+
+  <div style="width: 60%; float:left; margin-left: 2%; margin-top: 1.5%;">
+    <img src="FLL.jpg" class="mySlides" style="width:100%"/>
+    <img src="FLL2.jpg" class="mySlides" style="width:100%"/>
+    <img src="FLL3.jpg" class="mySlides" style="width:100%"/>
+  </div>
+
+  <div style="float: right; margin-right: 2%; margin-top: 2.4%; width:35%;">
+    <ul>
+      <p>Nemesis students and parents actively mentor FLL Teams. We have assisted in the formation of many FLL teams. <ul><li>Team 2536 Animus</li><li>Team 15560 Shockwave</li><li>Team 23335 Nerd Herd</li><li> Team 24557 The Electrons</li></ul></p><p>We have also mentored several FLL teams. <ul><li>Team 2536 Animus</li><li>Team 16831 IDK</li><li>Team 10423 Nerdherds</li><li>Team 24557 The Electrons</li><li>Team 15560 Shockwave</li><li>Team 27817 Expecto Robotum</li></ul></p>
+      <p>FLL teams give a demonstration for Discovery Day campers.</p>
+    </ul>
+  </div>
+
+
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+        slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+
+  </script>
+
+</body>
+
+</html>
